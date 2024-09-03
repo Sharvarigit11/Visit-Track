@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<main id="main" class="main">
+
+  <div class="pagetitle">
+    <h1>Welcome to Visit Track</h1>
+    <nav>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="{% url 'dashboard' %}">Home</a></li>
+        <li class="breadcrumb-item active">New Visitor</li>
+      </ol>
+    </nav>
+  </div><!-- End Page Title -->
+
+  <section class="section dashboard">
+    <div class="row">
+
+     
+             
+
+
+            
+
+       
+
+        
+
+       
+      
+
+    </div>
+  </section>
+  
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Add New Visitors</h5>
+
+      <!-- Multi Columns Form -->
+      <form class="row g-3" method="post" action="{% url 'storenewvisitor' %}">
+        {% csrf_token %}
+        <div class="col-md-4">
+          <!-- <label for="inputName5" class="form-label">Full Name</label> -->
+          <input type="text"  name="tfullname" placeholder="Full Name" class="form-control" id="inputFulltname5" value="{{ data.fullname }}" disabled required>
+        </div>
+        <div class="col-md-4">
+          <!-- <label for="inputEmail5" class="form-label">Email Id</label> -->
+          <input type="emailid" name="temailid" placeholder="Email Id" class="form-control" id="inputEmailid5" value="{{data.emailid }}" disabled required>
+        </div>
+        <div class="col-md-4">
+          <!-- <label for="inputPhoneno5" class="form-label">Phone No</label> -->
+          <input type="phoneno" name="tphoneno" placeholder="Phone Number" class="form-control" id="inputPhoneno5" value="{{data.phoneno }}" disabled required>
+        </div>
+        <div class="col-4">
+          <!-- <label for="inputAddress" class="form-label">Address</label> -->
+          <input type="text" name="taddress" placeholder="Address" class="form-control" id="inputAddress" value="{{data.address }}" disabled required>
+        </div>
+        <div class="col-md-4">
+          <!-- <label for="inputCompanyname2" class="form-label">Company Name</label> -->
+          <input type="text" name="tcompanyname"  placeholder="Company Name"class="form-control" id="inputCompanyname2" value="{{data.companyname }}" disabled  required>
+        </div>
+       
+        <div class="col-md-4">
+          <!-- <label for="inputmeet2" class="form-label"> Whome to Meet</label> -->
+          <input type="text" name="twhometomeet" placeholder="Whome to Meet"class="form-control" id="inputwhometomeet2" value="{{data.whometomeet}}" disabled  required>
+        </div>
+        <div class="col-md-4">
+          <!-- <label for="inputDepartment2" class="form-label">Department</label> -->
+          <input type="text" name="tdepartment"placeholder="Department" class="form-control" id="inputdepartment2" value="{{data.department}}" disabled required>
+        </div>
+        <div class="col-md-4">
+          <!-- <label for="inputReasontomeet2" class="form-label">Reason to Meet</label> -->
+           <input type="text" name="treasontomeet" placeholder="Reason to Meet" class="form-control" id="inputreasomtomeet2" value="{{data.reasontomeet }}" disabled placeholder="" required> 
+        </div>
+        <div class="col-md-4">
+          <!-- <label for="inputWheretomeet2" class="form-label">Where to Meet</label> -->
+          <input type="text" name="twheretomeet"placeholder="Where to Meet" class="form-control" id="inputwherretomeet2" value="{{data.wheretomeet}}" disabled required>
+        </div>
+        <div class="col-md-4">
+          <!-- <label for="inputDate4" class="form-label">Date to Meet</label> -->
+          <input type="date" name="tdatetomeet" placeholder="Date to Meet" class="form-control" id="inputDate4" value="{{data.datetomeet }}" disabled required>
+        </div>
+        <div class="col-md-4">
+          <!-- <label for="inputTime4" class="form-label">Time to Meet</label> -->
+          <input type="time" name="ttimetomeet"placeholder="Time to Meet" class="form-control" id="inputTime4" value="{{data.timetomeet}}" disabled required>
+        </div>
+       
+        <!-- <div class="col-md-4"> -->
+          <!-- <label for="inputState" class="form-label">State</label> -->
+          <!-- <select id="inputState" class="form-select"> -->
+           <!--  <option selected>Choose...</option> -->
+            <!-- <option>...</option> -->
+          </select>
+        </div>
+        
+        <!-- <div class="text-center"> -->
+          <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+          <!--<button type="reset" class="btn btn-secondary">Reset</button>-->
+        <!-- </div> -->
+      </form><!-- End Multi Columns Form -->
+
+    </div>
+  </div>
+  <section class="section">
+  
+
+</main>
+{% endblock %}

@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  <main id="main" class="main">
+
+    <div class="pagetitle" >
+      <h1>Welcome to Visit Track</h1>
+      <nav>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active">Dashboard</li>
+        </ol>
+      </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+       <div class="row" >  
+
+        <!-- Left side columns -->
+        <div class="col-lg-18" >
+          <div class="row" >
+
+            <!-- Total Departments Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card sales-card" style ="background-color:rgb(43, 183, 226);"> 
+              <div class="card-body">
+                  <h5 class="card-title">Total Departments<span> </span></h5>
+
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-building-fill"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>{{ a }}</h6>
+                      <span class="text-success small pt-1 fw-bold"></span> <span class="text-muted small pt-2 ps-1"></span>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!--  Total Departments Card -->
+
+            
+            <!-- Deleted Departments Card -->
+            <div class="col-xxl-4 col-md-6">
+              <div class="card info-card revenue-card" style ="background-color:rgb(93, 203, 236);">
+           <div class="card-body">
+                  <h5 class="card-title">Deleted Departments <span></span></h5>
+                  <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-building-fill-dash"></i> 
+                    </div>
+                    <div class="ps-3">
+                      <h6>{{ b }}</h6>
+                      <span class="text-success small pt-1 fw-bold"></span> <span class="text-muted small pt-2 ps-1"></span>
+
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div><!--Deleted Departments Card -->
+
+             
+            <!--Total  visitors Card -->
+             <div class="col-xxl-4 col-md-6">
+              <div class="card info-card revenue-card" style ="background-color:rgb(135, 216, 240);">
+                <div class="card-body" >
+                  <h5 class="card-title">Total Visitors <span></span></h5>
+                 <div class="d-flex align-items-center">
+                    <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                      <i class="bi bi-people"></i>
+                    </div>
+                    <div class="ps-3">
+                      <h6>{{ c }}</h6>
+                      <span class="text-success small pt-1 fw-bold"></span> <span class="text-muted small pt-2 ps-1"></span>
+
+                    </div>
+                  </div>
+                </div>
+
+               </div>
+            </div><!-- End Total  visitors  Card -->
+          
+
+          
+         
+        <!--Deleted  visitors Card -->
+          <div class="col-xxl-4 col-md-6">
+           <div class="card info-card revenue-card" style ="background-color:rgb(187, 229, 242);">
+             <div class="card-body"  >
+               <h5 class="card-title">Deleted Visitors <span></span></h5>
+                <div class="d-flex align-items-center">
+                 <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                  <i class="bi bi-person-fill-dash"></i>
+                 </div>
+                 <div class="ps-3">
+                   <h6>{{ d }}</h6>
+                   <span class="text-success small pt-1 fw-bold"></span> <span class="text-muted small pt-2 ps-1"></span>
+                 </div>
+               </div>
+             </div>
+
+           </div>
+         </div><!-- End Deleted visitors  Card -->
+
+
+             
+             
+           
+
+            
+        </div>
+    </section>
+
+  </main>
+  <!-- End #main -->
+
+{% endblock %}
+
+
+
+ 
