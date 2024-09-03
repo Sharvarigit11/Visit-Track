@@ -1,1 +1,1 @@
-Visit Track
+ I developed Visit Track project by using Python,Django,HTML,CSS,JAVASCRIPT,MariaDB server.Admin is the module who manages information of visitors of company or organizations by using CRUD operations.
